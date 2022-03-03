@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "c21ee52d-df9d-4cea-88b0-3fd2337db500",
+		"name": "ABSmartly Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/treatment?exp=EXPERIMENT_NAME",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"treatment"
+					],
+					"query": [
+						{
+							"key": "exp",
+							"value": "EXPERIMENT_NAME"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Middleware",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/?exp=EXPERIMENT_NAME",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "exp",
+							"value": "EXPERIMENT_NAME"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
